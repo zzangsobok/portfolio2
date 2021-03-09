@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>포트폴리오</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/fullpage.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    <link rel="shortcut icon" href="img/logo_black2_lSh_icon.ico">
+    
+    <script>
+		$(function(){
+            var size = $('body').width();
+
+            if (size > 1390) {
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:760});
+            } else if (850 < size && size <= 1389){
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:560});
+            } else if (500 < size && size <= 849){                               
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:456});
+            } else if (size <= 500){                               
+                $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:300});
+            };
+
+            $(window).resize(function(){
+                var size = $('body').width();
+                
+                if (size > 1390) {
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:760});
+                } else if (850 < size && size <= 1389){
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:560});
+                } else if (500 < size && size <= 849){                               
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:456});
+                } else if (size <= 500){                               
+                    $(".portfolio_btn").colorbox({iframe:true, innerWidth:'80%', innerHeight:300});
+                };
+            });
+            
+            $(".slide_1 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_1 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_1 .pf_img_container .pf_img_1").eq(i).css('display','block');
+                
+                $(".slide_1 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_1 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+            $(".slide_2 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_2 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_2 .pf_img_container .pf_img_1").eq(i).css('display','block');
+                
+                $(".slide_2 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_2 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+            $(".slide_3 .pf_st_cut>ul>li").click(function(){
+                var i = $(this).index();
+
+                $(".slide_3 .pf_img_container .pf_img_1").css('display', 'none');
+                $(".slide_3 .pf_img_container .pf_img_1").eq(i).css('display','block');
+            
+                $(".slide_3 .pf_txt_container .mpf_img .pf_img_1").css('display', 'none');
+                $(".slide_3 .pf_txt_container .mpf_img .pf_img_1").eq(i).css('display','block');
+            });
+        });
+	</script>
+</head>
+
+
+<body>
+    <nav id="navTop">
+        <div id="navTop_box">
+            <div id="logo">
+                <div><img src="img/logo_black2.png" alt=""></div>
+                <span>이소연 / Lee SoYeon</span>
+            </div>
+            <ul id="topMenu">
+                <li data-menuanchor="0st"><a href="#0st">HOME</a></li>
+                <li data-menuanchor="1st"><a href="#1st">PROFILE</a></li>
+                <li data-menuanchor="2st"><a href="#2st">PORTFOLIO</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="full-page">
+        <div class="section s0">
+            <div class="section_home">
+                <h1>PORTFOLIO</h1>
+            </div>
+        </div>
+        <div class="section s1">
+            <div class="section_content section_content1">
+            <h2>PROFILE</h2>
+                <div class="pr_container">
+                    <div class="pr_profile">
+                        <div><img src="img/증사.jpg" /></div>
+                        <ul>
+                            <li>이소연 / Lee SoYeon</li>
+                            <li><i class="fas fa-user"></i>영상관련 직종(지원직종)</li>
+                            <li><i class="fas fa-calendar"></i>1995.11.04 (만 25세)</li>
+                            <li><i class="fas fa-map-marker-alt"></i>인천시 거주</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="right_box">
+                        <div class="pr_box edu_box">
+                            <h3 class="pr_title edu_title">EDUCATION</h3>
+                            <div class="pr_date edu_date">
+                                <div>2020.09 - 2021.03</div>
+                            </div>
+                            <div class="pr_txt edu_txt">
+                                <div>광고콘텐츠 제작</div>
+                                <ul>
+                                    <li>- 교육기관: 방송정보국제교육원 (서울 영등포구)</li>
+                                    <li>- 교육기간: 2020-09-21 ~ 2021.03.17</li>
+                                    <li>- 교육내용: 영상제작, 기획, 촬영,</li>  
+                                    <li>  Premiere Pro, After Effects, Photoshop, Illustrator </li>  
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        <div class="ct_box">
+                           <div class="ct_inbox">
+                               <div class="ct_title"><h3>CONTACT</h3></div>
+                               <div class="ct_txt">
+                                   <ul>
+                                       <li><img src="img/con_phone.png" alt=""></li>
+                                       <li>010-8740-2514</li>
+                                   </ul>
+                                    <ul>
+                                       <li><img src="img/con_email.png" alt=""></li>
+                                       <li>moonsun1923@gmail.com</li>
+                                   </ul>
+                                   <ul>
+                                       <li><img src="img/con_kakao.png" alt=""></li>
+                                       <li>ID: miru9101</li>
+                                   </ul>
+                               </div>
+                           </div>
+                            
+                        </div>
+                    </div>
+                </div><!--pr_container-->
+            </div><!--section_box section_box_content-->
+        </div><!--section s1-->
+        <div class="section s2">
+            <div class="section_content section_content3">
+<!--               포트폴리오 1-->
+                <div class="slide slide_1">
+                    <h2>나그참파 30초 광고</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="img/nag_6.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/nag_1.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/nag_2.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/nag_3.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/nag_4.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/nag_5.jpg" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="img/nag_s6.jpg"></li>
+                                <li><img src="img/nag_s1.jpg"></li>
+                                <li><img src="img/nag_s2.jpg"></li>
+                                <li><img src="img/nag_s3.jpg"></li>
+                                <li><img src="img/nag_s4.jpg"></li>
+                                <li><img src="img/nag_s5.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">나그참파 광고</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="img/0.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/1.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/2.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/3.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/4.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/5.jpg" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="img/thumb0.jpg"></li>
+                                        <li><img src="img/thumb1.jpg"></li>
+                                        <li><img src="img/thumb2.jpg"></li>
+                                        <li><img src="img/thumb3.jpg"></li>
+                                        <li><img src="img/thumb4.jpg"></li>
+                                        <li><img src="img/thumb5.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">프로젝트 명:</span>
+                            <span class="pf_txt">30초 광고 제작</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">제작 소요기간: </span>
+                            <span class="pf_txt">2020.11.14~12.10 2주</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">설명:</span>
+                            <span class="pf_txt">30초 광고를 주제로 제작했습니다. 나그참파의 기본적인 이미지를 탈피하기 위해 예술적이고 힙한 그림과 나그참파 인센스스틱을 매치시키는 것을 목적으로 기획했습니다. 팀으로 촬영한 영상이지만 기획과 감독 역할로 촬영 전체 과정에 많은 참여를 했으며 편집은 개인별로 진행했습니다. </span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴:</span>
+                            <span class="pf_txt">Premiere Pro, Photoshop</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/N7p43CSXRfA" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+<!--                포트폴리오 2-->
+                <div class="slide slide_2">
+                    <h2>빈토리오 와인에어레이터 리뷰</h2>
+                    <div class="pf_img_container">
+                        <div class="image">
+                            <div class="pf_img_1" style="display:block;"><img src="img/vin_1.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/vin_2.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/vin_3.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/vin_4.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/vin_5.jpg" /></div>
+                            <div class="pf_img_1"><img src="img/vin_6.jpg" /></div>
+                        </div>   
+                        <div class="pf_st_cut">
+                            <ul>
+                                <li><img src="img/vin_s1.jpg"></li>
+                                <li><img src="img/vin_s2.jpg"></li>
+                                <li><img src="img/vin_s3.jpg"></li>
+                                <li><img src="img/vin_s4.jpg"></li>
+                                <li><img src="img/vin_s5.jpg"></li>
+                                <li><img src="img/vin_s6.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pf_txt_container" >
+                        <h3 class="pf_title">빈토리오 리뷰</h3>
+                        <div class="mpf_img mpf_img_2">
+                                <div>
+                                    <div class="pf_img_1" style="display:block;"><img src="img/0.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/1.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/2.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/3.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/4.jpg" /></div>
+                                    <div class="pf_img_1"><img src="img/5.jpg" /></div>
+                                </div>    
+                                <div class="pf_st_cut">
+                                    <ul>
+                                        <li><img src="img/thumb0.jpg"></li>
+                                        <li><img src="img/thumb1.jpg"></li>
+                                        <li><img src="img/thumb2.jpg"></li>
+                                        <li><img src="img/thumb3.jpg"></li>
+                                        <li><img src="img/thumb4.jpg"></li>
+                                        <li><img src="img/thumb5.jpg"></li>
+                                    </ul>
+                                </div>
+                        </div>
+                        <div>
+                            <span class="pf_name">프로젝트 명:</span>
+                            <span class="pf_txt">3분 제품 리뷰</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">제작 소요기간: </span>
+                            <span class="pf_txt">2020.12 1주</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">설명:</span>
+                            <span class="pf_txt">빈토리오의 와인에어레이터를 리뷰했습니다. 주로 촬영한 영상이 인터뷰 영상이었기 때문에 기획의 다른 그림이 다양하지 못한 점이 아쉽지만 기획을 더 철저하게 해서 촬영에 들어가야 한다는 깨달음을 얻었습니다. 혼자서는 처음 만들어 미숙한 점이 많지만 리뷰가 가져야 하는 스토리에 중점을 두었습니다.</span>
+                        </div>
+                        <div>
+                            <span class="pf_name">작업툴:</span>
+                            <span class="pf_txt">Premiere Pro, Photoshop</span>
+                        </div>
+                        <div class="pf_gosite"><a href="https://www.youtube.com/embed/3J2Smn-fS4k" class="portfolio_btn">CLICK TO PLAY</a></div>    
+                    </div>
+                </div>
+
+            <div id="footer">
+                <div id="footer_txt">Copyright 2021.SoYeon All rights reserved</div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    new fullpage('#full-page', {
+        licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
+        anchors:["0st","1st","2st"],
+        menu:"#topMenu",
+        sectionsColor:['#fff', '#eee', '#fff'],
+        scrollingSpeed: 1000,
+        slidesNavigation: true,
+		slidesNavPosition: 'bottom',
+        onLeave: function(origin, destination, direction) {
+            var leavingSection = this;
+            
+            if(origin.index == 0) {
+                $('.right_box .ct_inbox .ct_txt ul li').delay(600).fadeIn();
+            }
+            if(origin.index == 2) {
+                $('.right_box .ct_inbox .ct_txt ul li').delay(600).fadeIn();
+            }
+            if(origin.index == 1) {
+                $('.right_box .ct_inbox .ct_txt ul li').fadeOut();
+            }
+        },
+    });
+</script>
+</body>
+</html>
